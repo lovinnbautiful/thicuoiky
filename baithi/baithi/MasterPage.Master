@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="baithi.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/css.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table>
+     <tr>
+         <td colspan="2">
+             <div class="row-1">
+                 <div><img  src="Images/logovci.jfif"/></div>
+                  <div>
+                      <p style="font-weight:bold;font-size:17px"> Trường Cao đẳng</p>
+                      <p style="font-weight:bold;font-size:17px"> Công thương Việt Nam</p>
+                      <p style="color:red;font-size:15px">"Đào tạo những gì doanh nghiệp cần"</p>
+                 </div>
+             </div>
+         </td>
+     </tr>
+     <tr style="height:500px;width:15%;text-align:center">
+         <td>
+                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/dangkythongtin.aspx">Đăng ký thông tin</asp:HyperLink><br />
+                 <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/capnhattruonghoc.aspx">Cập nhật trường học</asp:HyperLink>
+         </td>
+         <td class="row-2">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+         </td>
+     </tr>
+     <tr style="height:50px">
+         <td colspan="2">
+             <div class="row-3">
+                 <div >
+                     <p>Họ tên: Nguyễn Ngọc Quang Vinh</p>
+                     <p>Đề thi: 01</p>
+                  </div>
+                 <div >
+                     <p>MSSV: </p>
+                     <p>SBD: CCN6B.24</p>
+                 </div>
+                 <div">
+                     <p>Lớp: CCN04.6B</p>
+                 </div>
+             </div>
+         </td>
+     </tr>
+ </table>
+    </form>
+</body>
+</html>
